@@ -8,3 +8,92 @@
 section {
   padding-top: 5rem;
 }
+
+/*software section*/
+.software-box {
+  position: relative;
+  background-color: #47443a;
+  border-radius: 10px;
+  height: 500px;
+  transform-style: preserve-3d;
+}
+
+.software-box::before {
+  content: 'MY';
+  position: absolute;
+  color: #c6bdaa;
+  font-size: 4em;
+  font-weight: bold;
+  font-style: italic;
+  top: 55px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.software-box:hover::before {
+  opacity: 0.2;
+}
+
+.software-box::after {
+  content: 'ABILITIES';
+  position: absolute;
+  color: #c6bdaa;
+  font-size: 3em;
+  font-weight: bold;
+  font-style: italic;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 350px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.software-box:hover::after {
+  opacity: 0.2;
+}
+
+.software-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #c6bdaa;
+  font-size: 2em;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.5s;
+  text-align: center;
+}
+
+.software-box:hover .software-name {
+  top: 20px;
+  opacity: 1;
+}
+
+.software-detail-button {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  transform: translate(-50%, 0, 100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.software-box:hover .software-detail-button {
+  opacity: 1;
+  bottom: 20px;
+}
+
+.software-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 100px);
+  max-width: 200px;
+  transition: 0.5s;
+}
+
+.software-box:hover .software-img {
+  transform: translate3d(-50%, -50%, 100px) rotate(-15deg) scale(1.2);
+}
