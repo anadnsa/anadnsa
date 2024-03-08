@@ -6,6 +6,9 @@
   background-color: #c6bdaa;
 }
 #contact {
+  background-color: #fff;
+}
+#detail {
   background-color: #c6bdaa;
 }
 section {
@@ -13,6 +16,7 @@ section {
 }
 
 /*software section*/
+
 .software-box {
   position: relative;
   background-color: #47443a;
